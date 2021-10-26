@@ -1,0 +1,26 @@
+.shell{
+    max-width: 1300px;
+    column-count: 5;
+    column-gap: 15px;
+}
+.image{
+    margin-bottom: 15px;
+}
+.image img{
+    width: 100%;
+}
+@media (max-width:1200px){
+    .shell{
+        column-count: 4;
+    }
+}
+@media (max-width:850px){
+    .shell{
+        column-count: 3;
+    }
+}
+@media (max-width:600px){
+    .shell{
+        column-count: 2;
+    }
+}
