@@ -28,6 +28,6 @@
 
 
 
-<div align="center" ><img order-radius="100px" src="https://cdn.jsdelivr.net/gh/JaikChen/JaikChen.github.io/blob/master/img/loading.gif"></div>
+<div align="center" ><img order-radius="100px" src="https://cdn.jsdelivr.net/gh/JaikChen/JaikImage/loading.gif"></div>
 
 <br>
