@@ -654,7 +654,6 @@ img {
     overflow: hidden;
     width: 45%;
     height: 100%;
-    -webkit-mask-image: -webkit-radial-gradient(#fff,#000)
 }
 
 #recent-posts>.recent-post-item .post_cover img.post_bg {
