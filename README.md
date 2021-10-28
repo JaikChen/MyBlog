@@ -4,7 +4,7 @@
   </a>
 </h1>
 <h6 align="center">
-  <a href="https://cleever-chen.com/">
+  <a href="https://cleever-chen.com/" style="text-decoration: none">
 该项目主要由CSS和HTML加上少量的JavaScript所构成
   </a>
 </h1>
