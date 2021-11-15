@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div {
+        .ll {
             overflow: hidden;
             width: 200px;
             height: 200px;
             border: 1px solid skyblue;
             margin: 100px auto;
         }
-        div::before {
+        .ll::before {
             content: "高大人";
             display: block;
             width: 100%;
@@ -21,14 +21,17 @@
             background-color: skyblue;
             transform: rotate(180deg);
             transform-origin: left bottom;
-            transition: all 0.4s;
+            transition: all 0.3s;
         }
-        div:hover::before {
+        .ll:hover::before {
             transform: rotate(0deg);
+        }
+        .ll:hover {
+            transform: scale(1.2);
         }
     </style>
 </head>
 <body>
-    <div></div>
+    <div class="ll"></div>
 </body>
 </html>
