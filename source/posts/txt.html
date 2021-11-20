@@ -29,9 +29,27 @@
         .ll:hover {
             transform: scale(1.2);
         }
+        .pp {
+            overflow: hidden;
+            font-size: 20px;
+            width: 0;
+            height: 30px;
+            background-color: skyblue;
+            white-space: nowrap;
+            animation: w 4s steps(10) forwards;
+        }
+        @keyframes w {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 200px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="ll"></div>
+    <div class="pp">高老师你小时候快活吗</div>
 </body>
 </html>
