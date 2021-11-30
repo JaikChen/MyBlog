@@ -20,24 +20,8 @@ img {
     border-style: none
 }
 
-::-webkit-file-upload-button {
-    -webkit-appearance: button;
-    font: inherit
-}
-
-#recent-posts>.recent-post-item>.recent-post-info>.article-title,
-#recent-posts>.recent-post-item>.recent-post-info>.content {
-    display: -webkit-box;
-    overflow: hidden;
-    -webkit-box-orient: vertical
-}
-
 .card-announcement-animation {
     color: red;
-    -webkit-animation: announ_animation .8s linear infinite;
-    -moz-animation: announ_animation .8s linear infinite;
-    -o-animation: announ_animation .8s linear infinite;
-    -ms-animation: announ_animation .8s linear infinite;
     animation: announ_animation .8s linear infinite
 }
 
@@ -56,13 +40,11 @@ img {
     --tab-botton-bg: #f0f0f0;
     --tab-botton-color: #1f2d3d;
     --tab-button-hover-bg: #dcdcdc;
-    --tab-button-active-bg: #fff;
-    --card-bg: #fff;
-    --sidebar-bg: #f6f8fa;
-    --btn-hover-color: #ff7242;
+    --card-bg: #fff;                     /*侧边栏颜色*/
+    --btn-hover-color: #ff7242;          /*github文字动画颜色*/
     --btn-color: #fff;
     --btn-bg: #9c9;
-    --text-bg-hover: rgba(153,204,153,0.7);
+    --text-bg-hover: rgba(153,204,153,0.7);/*指针悬浮分类内容时的颜色*/
     --light-grey: #eee;
     --white: #fff;
     --text-highlight-color: #1f2d3d;
@@ -111,19 +93,14 @@ body {
     background: -webkit-linear-gradient(0deg,rgba(247,149,51,.1) 0,rgba(243,112,85,.1) 15%,rgba(239,78,123,.1) 30%,rgba(161,102,171,.1) 44%,rgba(80,115,184,.1) 58%,rgba(16,152,173,.1) 72%,rgba(7,179,155,.1) 86%,rgba(109,186,130,.1) 100%);
     background: -moz-linear-gradient(0deg,rgba(247,149,51,.1) 0,rgba(243,112,85,.1) 15%,rgba(239,78,123,.1) 30%,rgba(161,102,171,.1) 44%,rgba(80,115,184,.1) 58%,rgba(16,152,173,.1) 72%,rgba(7,179,155,.1) 86%,rgba(109,186,130,.1) 100%);
     background: -o-linear-gradient(0deg,rgba(247,149,51,.1) 0,rgba(243,112,85,.1) 15%,rgba(239,78,123,.1) 30%,rgba(161,102,171,.1) 44%,rgba(80,115,184,.1) 58%,rgba(16,152,173,.1) 72%,rgba(7,179,155,.1) 86%,rgba(109,186,130,.1) 100%);
-    background: -ms-linear-gradient(0deg,rgba(247,149,51,.1) 0,rgba(243,112,85,.1) 15%,rgba(239,78,123,.1) 30%,rgba(161,102,171,.1) 44%,rgba(80,115,184,.1) 58%,rgba(16,152,173,.1) 72%,rgba(7,179,155,.1) 86%,rgba(109,186,130,.1) 100%);
-    background: linear-gradient(90deg,rgba(247,149,51,.1) 0,rgba(243,112,85,.1) 15%,rgba(239,78,123,.1) 30%,rgba(161,102,171,.1) 44%,rgba(80,115,184,.1) 58%,rgba(16,152,173,.1) 72%,rgba(7,179,155,.1) 86%,rgba(109,186,130,.1) 100%);
+     background: linear-gradient(90deg,rgba(247,149,51,.1) 0,rgba(243,112,85,.1) 15%,rgba(239,78,123,.1) 30%,rgba(161,102,171,.1) 44%,rgba(80,115,184,.1) 58%,rgba(16,152,173,.1) 72%,rgba(7,179,155,.1) 86%,rgba(109,186,130,.1) 100%);
     background-attachment: local;
     background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat
 }
 
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box
 }
 
@@ -136,10 +113,6 @@ a {
     color: #99a9bf;
     text-decoration: none;
     word-wrap: break-word;
-    -webkit-transition: all .2s;
-    -moz-transition: all .2s;
-    -o-transition: all .2s;
-    -ms-transition: all .2s;
     transition: all .2s;
     overflow-wrap: break-word
 }
@@ -155,10 +128,6 @@ a:hover {
 .button--animated {
     position: relative;
     z-index: 1;
-    -webkit-transition: color 1s;
-    -moz-transition: color 1s;
-    -o-transition: color 1s;
-    -ms-transition: color 1s;
     transition: color 1s
 }
 
@@ -171,42 +140,18 @@ a:hover {
     z-index: -1;
     background: var(--btn-hover-color);
     content: '';
-    -webkit-transition: -webkit-transform .5s ease-out;
-    -moz-transition: -moz-transform .5s ease-out;
-    -o-transition: -o-transform .5s ease-out;
-    -ms-transition: -ms-transform .5s ease-out;
     transition: transform .5s ease-out;
-    -webkit-transform: scaleX(0);
-    -moz-transform: scaleX(0);
-    -o-transform: scaleX(0);
-    -ms-transform: scaleX(0);
     transform: scaleX(0);
-    -webkit-transform-origin: 0 50%;
-    -moz-transform-origin: 0 50%;
-    -o-transform-origin: 0 50%;
-    -ms-transform-origin: 0 50%;
     transform-origin: 0 50%
 }
 
 .button--animated:hover:before {
-    -webkit-transition-timing-function: cubic-bezier(.45,1.64,.47,.66);
-    -moz-transition-timing-function: cubic-bezier(.45,1.64,.47,.66);
-    -o-transition-timing-function: cubic-bezier(.45,1.64,.47,.66);
-    -ms-transition-timing-function: cubic-bezier(.45,1.64,.47,.66);
     transition-timing-function: cubic-bezier(.45,1.64,.47,.66);
-    -webkit-transform: scaleX(1);
-    -moz-transform: scaleX(1);
-    -o-transform: scaleX(1);
-    -ms-transform: scaleX(1);
     transform: scaleX(1)
 }
 
 img {
     max-width: 100%;
-    -webkit-transition: all .2s;
-    -moz-transition: all .2s;
-    -o-transition: all .2s;
-    -ms-transition: all .2s;
     transition: all .2s
 }
 
@@ -222,34 +167,16 @@ img {
 }
 
 #body-wrap {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: box;
     display: flex;
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-    -o-box-orient: vertical;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
     min-height: 100vh
 }
 
 .layout {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: box;
     display: flex;
-    -webkit-box-flex: 1;
-    -moz-box-flex: 1;
-    -o-box-flex: 1;
     box-flex: 1;
-    -webkit-flex: 1 auto;
-    -ms-flex: 1 auto;
     flex: 1 auto;
     margin: 0 auto;
     padding: 2rem 15px;
@@ -259,36 +186,17 @@ img {
 
 @media screen and (max-width: 900px) {
     .layout {
-        -webkit-box-orient:vertical;
-        -moz-box-orient: vertical;
-        -o-box-orient: vertical;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
         flex-direction: column
     }
 }
 
-@media screen and (max-width: 768px) {
-    .layout {
-        padding:1rem 5px
-    }
-}
-
-@media screen and (min-width: 2000px) {
-    .layout {
-        max-width:1500px
-    }
-}
 
 .layout>div:first-child {
     width: 75%;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -o-transition: all .3s;
-    -ms-transition: all .3s;
     transition: all .3s
 }
 
+/* 根据浏览器窗口大小给定内容盒子大小 */
 @media screen and (max-width: 900px) {
     .layout>div:first-child {
         width:100%!important
@@ -300,33 +208,14 @@ img {
 }
 
 #recent-posts>.recent-post-item {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: box;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -moz-box-orient: horizontal;
-    -o-box-orient: horizontal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    -o-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
     align-items: center;
     height: 20em;
     border-radius: 12px 8px 8px 12px;
     background: var(--card-bg);
-    -webkit-box-shadow: var(--card-box-shadow);
     box-shadow: var(--card-box-shadow);
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -o-transition: all .3s;
-    -ms-transition: all .3s;
     transition: all .3s
 }
 
@@ -342,10 +231,6 @@ img {
 }
 
 #recent-posts>.recent-post-item:hover img.post_bg {
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    -ms-transform: scale(1.1);
     transform: scale(1.1)
 }
 
@@ -362,19 +247,11 @@ img {
 #recent-posts>.recent-post-item .post_cover img.post_bg {
     width: 100%;
     height: 100%;
-    -webkit-transition: all .6s;
-    -moz-transition: all .6s;
-    -o-transition: all .6s;
-    -ms-transition: all .6s;
     transition: all .6s;
     object-fit: cover
 }
 
 #recent-posts>.recent-post-item .post_cover img.post_bg:hover {
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    -ms-transform: scale(1.1);
     transform: scale(1.1)
 }
 
@@ -390,12 +267,7 @@ img {
     color: var(--text-highlight-color);
     font-size: 1.72em;
     line-height: 1.4;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    -ms-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-    -webkit-line-clamp: 2
 }
 
 #recent-posts>.recent-post-item>.recent-post-info>.article-title:hover {
@@ -439,21 +311,12 @@ img {
 
 @media screen and (max-width: 768px) {
     #recent-posts .recent-post-item {
-        -webkit-box-orient:vertical;
-        -moz-box-orient: vertical;
-        -o-box-orient: vertical;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
         flex-direction: column;
         height: auto!important
     }
 
     #recent-posts .recent-post-item .post_cover {
-        -webkit-box-ordinal-group: 1!important;
-        -moz-box-ordinal-group: 1!important;
-        -o-box-ordinal-group: 1!important;
-        -ms-flex-order: 1!important;
-        -webkit-order: 1!important;
+
         order: 1!important;
         width: 100%;
         height: 230px;
@@ -461,11 +324,6 @@ img {
     }
 
     #recent-posts .recent-post-item .recent-post-info {
-        -webkit-box-ordinal-group: 2!important;
-        -moz-box-ordinal-group: 2!important;
-        -o-box-ordinal-group: 2!important;
-        -ms-flex-order: 2!important;
-        -webkit-order: 2!important;
         order: 2!important;
         padding: 1rem 1rem 1.5rem;
         width: 100%
@@ -499,6 +357,11 @@ img {
 #aside-content>.card-widget:first-child {
     margin-top: 0
 }
+/* 公告和分类字体设置 */
+#aside-content .item-headline {
+    padding-bottom: .3rem;
+    font-size: 1.2em;
+}
 
 @media screen and (max-width: 900px) {
     #aside-content>.card-widget:first-child {
@@ -513,12 +376,7 @@ img {
     padding: 1rem 1.2rem;
     border-radius: 8px;
     background: var(--card-bg);
-    -webkit-box-shadow: var(--card-box-shadow);
     box-shadow: var(--card-box-shadow);
-    -webkit-transition: box-shadow .3s;
-    -moz-transition: box-shadow .3s;
-    -o-transition: box-shadow .3s;
-    -ms-transition: box-shadow .3s;
     transition: box-shadow .3s
 }
 
@@ -567,15 +425,6 @@ img {
     padding-left: .5rem
 }
 
-#aside-content .item-headline {
-    padding-bottom: .3rem;
-    font-size: 1.2em
-}
-
-#aside-content .item-headline span {
-    margin-left: .3rem
-}
-
 #aside-content .card-categories ul.card-category-list {
     margin: 0;
     padding: 0;
@@ -587,10 +436,7 @@ img {
     padding: .15rem .5rem;
     width: 100%;
     color: var(--font-color);
-    -webkit-transition: all .4s;
-    -moz-transition: all .4s;
-    -o-transition: all .4s;
-    -ms-transition: all .4s;
+
     transition: all .4s
 }
 
@@ -604,14 +450,12 @@ img {
     vertical-align: bottom
 }
 
+/* 分类中，具体内容 */
 #aside-content .card-categories ul.card-category-list>.card-category-list-item a span:first-child {
     width: 80%
 }
 
-#aside-content .card-categories ul.card-category-list>.card-category-list-item a span:last-child {
-    width: 20%;
-    text-align: right
-}
+
 
 /* 头像框设计 */
 .avatar-img {
