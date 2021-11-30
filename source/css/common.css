@@ -1,24 +1,12 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
     line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-    height: 100%;
-    font-size: 20px
+    -webkit-text-size-adjust: 100%
 }
 
 body {
-    
-    position: relative;
-    min-height: 100%;
-    background: var(--global-bg);
-    color: var(--font-color);
-    font-size: var(--global-font-size);
-    font-family: -apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Lato,Roboto,'PingFang SC','Microsoft YaHei',sans-serif;
-    line-height: 2;
-    -webkit-tap-highlight-color: transparent
+    margin: 0
 }
-
-
 
 main {
     display: block
@@ -84,6 +72,35 @@ img {
     --toc-link-color: #666261;
     --card-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.06);
     --card-hover-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.15)
+}
+
+html {
+    height: 100%;
+    font-size: 20px
+}
+
+body {
+    position: relative;
+    min-height: 100%;
+    background: var(--global-bg);
+    color: var(--font-color);
+    font-size: var(--global-font-size);
+    font-family: -apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Lato,Roboto,'PingFang SC','Microsoft YaHei',sans-serif;
+    line-height: 2;
+    -webkit-tap-highlight-color: transparent
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--btn-bg)
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent
 }
 
 #web_bg {
@@ -242,13 +259,33 @@ img {
 
 @media screen and (max-width: 900px) {
     .layout {
-
+        -webkit-box-orient:vertical;
+        -moz-box-orient: vertical;
+        -o-box-orient: vertical;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
         flex-direction: column
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .layout {
+        padding:1rem 5px
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .layout {
+        max-width:1500px
     }
 }
 
 .layout>div:first-child {
     width: 75%;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;
     transition: all .3s
 }
 
@@ -263,12 +300,33 @@ img {
 }
 
 #recent-posts>.recent-post-item {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: box;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -o-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -o-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
     height: 20em;
     border-radius: 12px 8px 8px 12px;
     background: var(--card-bg);
+    -webkit-box-shadow: var(--card-box-shadow);
+    box-shadow: var(--card-box-shadow);
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;
     transition: all .3s
 }
 
@@ -339,16 +397,16 @@ img {
     transition: all .2s ease-in-out;
     -webkit-line-clamp: 2
 }
-/* 文章标题选中时颜色 */
+
 #recent-posts>.recent-post-item>.recent-post-info>.article-title:hover {
     color: #9c9
 }
-/* 文章发布时间文字大小和颜色 */
+
 #recent-posts>.recent-post-item>.recent-post-info>.article-meta-wrap {
     color: #858585;
     font-size: 90%
 }
-/* 悬停时鼠标样式 */
+
 #recent-posts>.recent-post-item>.recent-post-info>.article-meta-wrap>.post-meta-date {
     cursor: default
 }
@@ -555,6 +613,7 @@ img {
     text-align: right
 }
 
+/* 头像框设计 */
 .avatar-img {
     overflow: hidden;
     margin: 0 auto;
@@ -563,34 +622,28 @@ img {
     border-radius: 70px
 }
 
+/* 头像图片限制 */
 .avatar-img img {
     height: 100%;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -o-transition: all .5s;
-    -ms-transition: all .5s;
     transition: all .5s;
     object-fit: cover
 }
 
+/* 鼠标悬停头像时，头像旋转 */
 .avatar-img img:hover {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
     transform: rotate(360deg)
 }
 
+/* footer设计 */
 #footer {
     position: relative;
     background: #9c9;
     background-attachment: local;
     background-position: bottom;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
     background-size: cover
 }
 
+/* footer内容布局 */
 #footer-wrap {
     position: relative;
     padding: 2rem 1rem;
@@ -602,35 +655,27 @@ img {
     color: var(--light-grey)
 }
 
+/* 用下划线提醒是连接可以点击 */
 #footer-wrap a:hover {
     text-decoration: underline
 }
 
-#page-header {
-    position: relative;
-    width: 100%;
-    background-color: #9c9;
-    background-position: center center;
-
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: all .5s
-}
-
+/* 导航栏占地范围 */
 #page-header.not-top-img {
     margin-bottom: .5rem;
     height: 60px;
     background: 0
 }
 
+/* 导航栏形状 */
 #page-header.not-top-img #nav {
     background: rgba(255,255,255,.8);
-    -webkit-box-shadow: 0 5px 6px -5px rgba(133,133,133,.6);
     box-shadow: 0 5px 6px -5px rgba(133,133,133,.6)
 }
 
+/* 导航栏一悲颜色 */
 #page-header.not-top-img #nav a {
-    color: var(--font-color);
+    color: var(--fot-color);
     text-shadow: none
 }
 
@@ -638,6 +683,7 @@ img {
     position: absolute;
     top: 0;
     z-index: 90;
+    display: box;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -647,16 +693,6 @@ img {
     font-size: 1.3em;
     opacity: 0;
     transition: all .5s
-}
-
-#nav #blog_name {
-    -webkit-box-flex: 1;
-    -moz-box-flex: 1;
-    -o-box-flex: 1;
-    box-flex: 1;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1
 }
 
 #nav a {
