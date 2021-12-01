@@ -1,12 +1,11 @@
 .kcb{
+    overflow: hidden;
     width: 650px;
     height: 650px;
-    overflow: hidden;
     position: relative;
     display: flex;
 
 }
-
 
 table{
     width: 100.1%;
