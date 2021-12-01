@@ -1,22 +1,20 @@
 .kcb{
-    background-color: rgb(247, 255, 253);
-    width: 800px;
+    width: 650px;
     height: 650px;
+    overflow: hidden;
     position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 9%; 
+
 }
 
+
 table{
-    width: 100%;
-    border: 1px solid #087dc0;
+    width: 100.1%;
+    border: .5px solid rgb(153, 204, 153);
     height: 100%;
     padding: 10px;
     border-collapse: collapse;
     font-size: 1em;           
-    background:rgb(235, 231, 231);
 }
 
 thead{
@@ -26,8 +24,8 @@ thead{
 }
 
 td,th{
-    border: 1px solid rgb(153, 204, 153);
-     width:12.5%;
+    border: 1px solid rgb(100, 170, 100);
+    width:12.5%;
 }
 
 td{
