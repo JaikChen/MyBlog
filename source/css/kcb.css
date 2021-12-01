@@ -1,0 +1,68 @@
+.kcb{
+    background-color: rgb(247, 255, 253);
+    width: 800px;
+    height: 650px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9%; 
+}
+
+table{
+    width: 100%;
+    border: 1px solid #087dc0;
+    height: 100%;
+    padding: 10px;
+    border-collapse: collapse;
+    font-size: 1em;           
+    background:rgb(235, 231, 231);
+}
+
+thead{
+    height: 50px;
+    line-height: 50px;
+    background: rgb(153, 204, 153);
+}
+
+td,th{
+    border: 1px solid rgb(153, 204, 153);
+     width:12.5%;
+}
+
+td{
+    empty-cells:show;
+    text-align: center;
+}
+
+.R {
+    background: #64ec9df5;
+}
+
+.spss {
+    background: rgb(100,200,120);
+}
+
+.hadoop {
+    background: rgb(170,230,170);
+}
+
+.scala {
+    background: #54eebb;
+}
+
+.Web{
+    background:rgb(183, 224, 183)
+}
+
+.Linux {
+    background:rgb(42, 223, 147);
+}
+
+.English {
+    background:rgb(164, 235, 84);
+}
+
+.BH {
+    background: #6dc7b3;
+}

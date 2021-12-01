@@ -20,10 +20,12 @@ img {
     border-style: none
 }
 
-.card-announcement-animation {
-    color: red;
-    animation: announ_animation .8s linear infinite
-}
+*{
+       padding: 0px;
+       margin: 0px;
+       box-sizing: border-box;
+       list-style: none;
+   }
 
 :root {
     --global-font-size: 14px;
@@ -535,7 +537,7 @@ img {
     width: 100%;
     height: 60px;
     font-size: 1.3em;
-    opacity: 0;
+    opacity: 1;
     transition: all .5s
 }
 
@@ -552,4 +554,3 @@ img {
     font-weight: 700;
     cursor: pointer
 }
-
