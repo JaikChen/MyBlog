@@ -371,6 +371,7 @@ img {
     }
 }
 
+
 #aside-content .card-widget {
     position: relative;
     overflow: hidden;
@@ -520,7 +521,7 @@ img {
     box-shadow: 0 5px 6px -5px rgba(133,133,133,.6)
 }
 
-/* 导航栏一悲颜色 */
+/* 导航栏内容颜色 */
 #page-header.not-top-img #nav a {
     color: var(--fot-color);
     text-shadow: none
@@ -550,16 +551,17 @@ img {
     color: var(--white)
 }
 
+/* 站点名字加粗 */
 #nav #site-name {
-    text-shadow: .1rem .1rem .2rem rgba(0,0,0,.15);
     font-weight: 700;
-    cursor: pointer
 }
+
+
 /* 小羊鼠标跟随 */
 .img1{
     width: 50px;
     height: 50px;
     position: absolute;
-    background-image: url('/source/Image/goat.gif');
+    background-image: url('../Image/goat.gif');
     background-size: cover;
 }

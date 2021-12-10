@@ -12,13 +12,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>一悲自留地</title>
+    <!-- 站点loge -->
     <link rel="stylesheet" href="source/css/common.css">
     <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/jaikchen/JaikImage/tubiao.ico">
 </head>
 
 <body>
+    <!-- 小羊鼠标跟随 -->
     <div class="img1"></div>
+    <!-- 手动调节的背景颜色 -->
     <div id="web_bg"></div>
+    <!-- 整体结构使用Flexible Box 模型 -->
     <div class="page" id="body-wrap">
         <header class="not-top-img" id="page-header">
             <nav id="nav">
@@ -26,7 +30,7 @@
                     <a id="site-name" href="">一悲のBlog</a>
                 </span>
                 <span>
-                    <a class="">啥于不是</a>
+                    <a id="nav-post">啥于不是</a>
                 </span>
             </nav>
         </header>
@@ -52,7 +56,7 @@
                                 src="https://cdn.jsdelivr.net/gh/L-20021213/picture@1.0.0/2021/02/05/3d70af1e6fd3244928d99842ec63d302.png"
                                 onerror='this.onerror=null,this.src="/img/404.jpg"'></a></div>
                     <div class="recent-post-info"><a class="article-title" href="source/posts/pbl.html"
-                            title="">瀑布流轮播图库</a>
+                            title="">瀑布流图库</a>
                         <div class="article-meta-wrap"><span class="post-meta-date"><i
                                     class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time>2021-09-21</time></span><span class="article-meta"><span
                                     class="article-meta__separator">|</span><a class=""
@@ -79,7 +83,20 @@
                     <div class="post_cover left_radius"><a href="source/posts/Login.htm" title=""><img class="post_bg"
                                 src="https://cdn.jsdelivr.net/gh/L-20021213/picture@1.0.0/2021/02/05/3d70af1e6fd3244928d99842ec63d302.png"
                                 onerror='this.onerror=null,this.src="/img/404.jpg"' alt=""></a></div>
-                    <div class="recent-post-info"><a class="article-title" href="source/posts/Login.htm" title="">测试</a>
+                    <div class="recent-post-info"><a class="article-title" href="source/posts/Login.htm" title="">登录界面</a>
+                        <div class="article-meta-wrap"><span class="post-meta-date"><i
+                                    class="far fa-calendar-alt"></i><span class="">发表于</span><time>2021-9-21</time></span><span class="article-meta"><span
+                                    class="article-meta__separator">|</span><a class=""
+                                    href="">作业要求</a></span>
+                        </div>
+                        <div class="content">此文章仅用于记录</div>
+                    </div>
+                </div>
+                <div class="recent-post-item">
+                    <div class="post_cover left_radius"><a href="source/posts/txt.html" title=""><img class="post_bg"
+                                src="https://cdn.jsdelivr.net/gh/L-20021213/picture@1.0.0/2021/02/05/3d70af1e6fd3244928d99842ec63d302.png"
+                                onerror='this.onerror=null,this.src="/img/404.jpg"' alt=""></a></div>
+                    <div class="recent-post-info"><a class="article-title" href="source/posts/txt.html" title="">测试</a>
                         <div class="article-meta-wrap"><span class="post-meta-date"><i
                                     class="far fa-calendar-alt"></i><span class="">发表于</span><time>2021-9-21</time></span><span class="article-meta"><span
                                     class="article-meta__separator">|</span><a class=""
@@ -125,16 +142,16 @@
                 <div class="card-widget card-categories">
                     <div class="item-headline"><span>分类</span></div>
                     <ul class="card-category-list">
-                        <li class="card-category-list-item"><a class="" href=""><span class="">学习记录</span><span
-                                    class="">19</span></a></li>
-                        <li class="card-category-list-item"><a class="" href=""><span class="">干货分享</span><span
-                                    class="">11</span></a></li>
-                        <li class="card-category-list-item"><a class="" href=""><span class="">技巧杂烩</span><span
-                                    class="">20</span></a></li>
-                        <li class="card-category-list-item"><a class="" href=""><span class="">无处安放</span><span
-                                    class="">2</span></a></li>
-                        <li class="card-category-list-item"><a class="" href=""><span class="">生活随笔</span><span
-                                    class="">2122</span></a></li>
+                        <li class="card-category-list-item"><a><span>学习记录</span><span
+                            >19</span></a></li>
+                        <li class="card-category-list-item"><a><span>干货分享</span><span
+                            >11</span></a></li>
+                        <li class="card-category-list-item"><a><span>技巧杂烩</span><span
+                            >20</span></a></li>
+                        <li class="card-category-list-item"><a><span>无处安放</span><span
+                            >2</span></a></li>
+                        <li class="card-category-list-item"><a><span>生活随笔</span><span
+                            >2122</span></a></li>
                     </ul>
                 </div>
             </div>
@@ -142,6 +159,7 @@
     </main>
     <footer id="footer">
         <div id="footer-wrap">
+            <!-- cleever-chen.com为本人博客 -->
             <div class="">&copy;<a href="https://www.cleever-chen.com" target="_blank">一悲自留地</a></div>
             <!-- 备案号皖ICP备 2021007180号-3并不存在，而皖ICP备 2021007180号-1与皖ICP备 2021007180号-2是本人两个域名的备案号 -->
             <div class=""><a href="https://beian.miit.gov.cn/" target="_blank">皖ICP备 2021007180号-3 </a></div>
