@@ -358,6 +358,7 @@ img {
 #aside-content>.card-widget:first-child {
     margin-top: 0
 }
+
 /* 公告和分类字体设置 */
 #aside-content .item-headline {
     padding-bottom: .3rem;
@@ -381,6 +382,7 @@ img {
     transition: box-shadow .3s
 }
 
+/* 博客名片 */
 #aside-content .card-widget:hover {
     -webkit-box-shadow: var(--card-hover-box-shadow);
     box-shadow: var(--card-hover-box-shadow)
