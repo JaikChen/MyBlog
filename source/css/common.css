@@ -284,10 +284,6 @@ img {
     font-size: 90%
 }
 
-#recent-posts>.recent-post-item>.recent-post-info>.article-meta-wrap>.post-meta-date {
-    cursor: default
-}
-
 #recent-posts>.recent-post-item>.recent-post-info>.article-meta-wrap i {
     margin: 0 .2rem 0 0
 }
