@@ -503,12 +503,12 @@ img {
     color: var(--light-grey)
 }
 
-/* 用下划线提醒是连接可以点击 */
+/* 用鼠标停留时出现下划线提醒是连接可以点击 */
 #footer-wrap a:hover {
     text-decoration: underline
 }
 
-/* 导航栏占地范围 */
+/* 导航栏范围 */
 #page-header.not-top-img {
     margin-bottom: .5rem;
     height: 60px;
