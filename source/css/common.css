@@ -1,19 +1,6 @@
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-html {
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%
-}
-
-body {
-    margin: 0
-}
 
 main {
     display: block
-}
-
-a {
-    background-color: transparent
 }
 
 img {
@@ -25,66 +12,47 @@ img {
        margin: 0px;
        box-sizing: border-box;
        list-style: none;
+       box-sizing: border-box
    }
 
+/* 为了颜色统一避免颜色不够纯净故在此规定一些设计中需用到的颜色 */
 :root {
+    /* 整体字体大小 */
     --global-font-size: 14px;
-    --global-bg: #fff;
+    /* 侧边栏里三个标签字体颜色 */
     --font-color: #4c4948;
-    --hr-border: #cce5cc;
-    --hr-before-color: #b8dbb8;
-    --search-bg: #f6f8fa;
-    --search-input-color: #4c4948;
-    --search-result-title: #4c4948;
-    --preloader-bg: #37474f;
-    --preloader-color: #fff;
-    --tab-border-color: #f0f0f0;
-    --tab-botton-bg: #f0f0f0;
-    --tab-botton-color: #1f2d3d;
     --tab-button-hover-bg: #dcdcdc;
-    --card-bg: #fff;                     /*侧边栏颜色*/
-    --btn-hover-color: #ff7242;          /*github文字动画颜色*/
+    /*侧边栏颜色*/
+    --card-bg: #fff;        
+    /*github文字动画颜色*/             
+    --btn-hover-color: #ff7242;          
     --btn-color: #fff;
     --btn-bg: #9c9;
-    --text-bg-hover: rgba(153,204,153,0.7);/*指针悬浮分类内容时的颜色*/
+    /*指针悬浮分类内容时的颜色*/
+    --text-bg-hover: rgba(153,204,153,0.7);
+    /* 用来规定页脚颜色 */
     --light-grey: #eee;
-    --white: #fff;
-    --text-highlight-color: #1f2d3d;
-    --blockquote-color: #6a737d;
-    --blockquote-bg: rgba(73,177,245,0.1);
-    --reward-pop: #f5f5f5;
-    --toc-link-color: #666261;
+    /* 侧边栏里数字颜色 */
+    --text-highlight-color: #1f2d3d;;
+    /* 选中文章卡牌时，文章卡片阴影颜色 */
     --card-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.06);
     --card-hover-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.15)
 }
 
 html {
     height: 100%;
-    font-size: 20px
+    font-size: 20px;
+    line-height: 1.15
 }
 
 body {
+    margin: 0;
     position: relative;
     min-height: 100%;
     background: var(--global-bg);
     color: var(--font-color);
-    font-size: var(--global-font-size);
-    font-family: -apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Lato,Roboto,'PingFang SC','Microsoft YaHei',sans-serif;
-    line-height: 2;
-    -webkit-tap-highlight-color: transparent
-}
-
-::-webkit-scrollbar {
-    width: 8px;
-    height: 8px
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--btn-bg)
-}
-
-::-webkit-scrollbar-track {
-    background-color: transparent
+    font-size: var(--global-font-size); 
+    line-height: 2
 }
 
 /* 主博客颜色调节 */
@@ -98,20 +66,7 @@ body {
     background: -webkit-linear-gradient(0deg,rgba(247,149,51,.1) 0,rgba(243,112,85,.1) 15%,rgba(239,78,123,.1) 30%,rgba(161,102,171,.1) 44%,rgba(80,115,184,.1) 58%,rgba(16,152,173,.1) 72%,rgba(7,179,155,.1) 86%,rgba(109,186,130,.1) 100%);
     background: -moz-linear-gradient(0deg,rgba(247,149,51,.1) 0,rgba(243,112,85,.1) 15%,rgba(239,78,123,.1) 30%,rgba(161,102,171,.1) 44%,rgba(80,115,184,.1) 58%,rgba(16,152,173,.1) 72%,rgba(7,179,155,.1) 86%,rgba(109,186,130,.1) 100%);
     background: -o-linear-gradient(0deg,rgba(247,149,51,.1) 0,rgba(243,112,85,.1) 15%,rgba(239,78,123,.1) 30%,rgba(161,102,171,.1) 44%,rgba(80,115,184,.1) 58%,rgba(16,152,173,.1) 72%,rgba(7,179,155,.1) 86%,rgba(109,186,130,.1) 100%);
-     background: linear-gradient(90deg,rgba(247,149,51,.1) 0,rgba(243,112,85,.1) 15%,rgba(239,78,123,.1) 30%,rgba(161,102,171,.1) 44%,rgba(80,115,184,.1) 58%,rgba(16,152,173,.1) 72%,rgba(7,179,155,.1) 86%,rgba(109,186,130,.1) 100%);
-    background-attachment: local;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat
-}
-
-* {
-    box-sizing: border-box
-}
-
-::selection {
-    background: #a0dad0;
-    color: #f7f7f7
+     background: linear-gradient(90deg,rgba(247,149,51,.1) 0,rgba(243,112,85,.1) 15%,rgba(239,78,123,.1) 30%,rgba(161,102,171,.1) 44%,rgba(80,115,184,.1) 58%,rgba(16,152,173,.1) 72%,rgba(7,179,155,.1) 86%,rgba(109,186,130,.1) 100%)
 }
 
 a {
@@ -119,6 +74,7 @@ a {
     text-decoration: none;
     word-wrap: break-word;
     transition: all .2s;
+    background-color: transparent;
     overflow-wrap: break-word
 }
 
@@ -126,6 +82,7 @@ a:hover {
     color: #9c9
 }
 
+/* 侧边栏内容居中 */
 .is-center {
     text-align: center
 }
@@ -556,6 +513,9 @@ img {
     font-weight: 700;
 }
 
+ #nav #nav-post {
+    font-size: 15px
+}
 
 /* 小羊鼠标跟随 */
 .img1{
