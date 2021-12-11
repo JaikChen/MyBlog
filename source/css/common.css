@@ -4,7 +4,9 @@ main {
 }
 
 img {
-    border-style: none
+    border-style: none;
+    max-width: 100%;
+    transition: all .2s
 }
 
 *{
@@ -110,22 +112,6 @@ a:hover {
 .button--animated:hover:before {
     transition-timing-function: cubic-bezier(.45,1.64,.47,.66);
     transform: scaleX(1)
-}
-
-img {
-    max-width: 100%;
-    transition: all .2s
-}
-
-:root {
-    --hl-color: #90a4ae;
-    --hl-bg: #f6f8fa;
-    --hltools-bg: #e6ebf1;
-    --hltools-color: #90a4ae;
-    --hlnumber-bg: #f6f8fa;
-    --hlnumber-color: rgba(144,164,174,0.5);
-    --hlscrollbar-bg: #dce4eb;
-    --hlexpand-bg: linear-gradient(180deg, rgba(246,248,250,0.6), rgba(246,248,250,0.9))
 }
 
 #body-wrap {
@@ -267,45 +253,18 @@ img {
     -webkit-line-clamp: 3
 }
 
-@media screen and (max-width: 768px) {
-    #recent-posts .recent-post-item {
-        flex-direction: column;
-        height: auto!important
-    }
-
-    #recent-posts .recent-post-item .post_cover {
-
-        order: 1!important;
-        width: 100%;
-        height: 230px;
-        border-radius: 8px 8px 0 0
-    }
-
-    #recent-posts .recent-post-item .recent-post-info {
-        order: 2!important;
-        padding: 1rem 1rem 1.5rem;
-        width: 100%
-    }
-
-    #recent-posts .recent-post-item .recent-post-info .article-title {
-        font-size: 1.43em
-    }
-
-    #recent-posts .recent-post-item .recent-post-info .content {
-        height: auto
-    }
-}
-
 #aside-content {
     width: 25%
 }
 
+/* 侧边栏与文章卡片间隙 */
 @media screen and (min-width: 900px) {
     #aside-content {
         padding-left:15px
     }
 }
 
+/* 当浏览器窗口过小时，侧边栏下移到文章卡片下面 */
 @media screen and (max-width: 900px) {
     #aside-content {
         width:100%
@@ -322,13 +281,7 @@ img {
     font-size: 1.2em;
 }
 
-@media screen and (max-width: 900px) {
-    #aside-content>.card-widget:first-child {
-        margin-top:1rem
-    }
-}
-
-
+/* 侧边栏主体设置 */
 #aside-content .card-widget {
     position: relative;
     overflow: hidden;
@@ -340,14 +293,8 @@ img {
     transition: box-shadow .3s
 }
 
-/* 博客名片 */
-#aside-content .card-widget:hover {
-    -webkit-box-shadow: var(--card-hover-box-shadow);
-    box-shadow: var(--card-hover-box-shadow)
-}
-
+/* 侧边栏姓名 */
 #aside-content .card-info .author-info__name {
-    font-weight: 500;
     font-size: 1.57em
 }
 
