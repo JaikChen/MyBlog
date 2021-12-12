@@ -1,0 +1,76 @@
+.keybody{
+    display: flex;
+    align-items: center;
+    height: 39vh;
+    position: relative;
+}
+.keyboard-base{
+    box-sizing: border-box;
+    min-width: 1085px;
+    padding: 20px;
+    background-color: rgb(56, 56, 56);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(30,30px);
+    grid-template-rows: repeat (5,60px);
+    grid-gap: 5px;
+    
+}
+.key{
+    background-color: rgb(243, 243, 243);
+    border-radius: 5px;
+    grid-column: span 2;
+    font: 500 20px '';
+    text-align: center;
+    padding: 17px;
+    border: 2px solid black;
+}
+.key:hover{
+    box-shadow:  inset 0 0 7px rgba(0,0,0,0.8);
+}
+.color{
+    background-color: rgb(180, 180, 180);
+}
+.delete{
+    grid-column: span 4;
+}
+.tab{
+    grid-column: span 3;
+}
+.backslash{
+    grid-column: span 3;
+}
+.capslock{
+    grid-column: span 4;
+}
+.return{
+    background-color: rgb(250, 140, 70);
+    grid-column: span 4;
+}
+.leftshift{
+    grid-column: span 5;
+}
+.rightshift{
+    grid-column: span 5;
+}
+.leftctrl{
+    grid-column: span 3;
+}
+.command{
+    grid-column: span 3;
+    font-size: 14px;
+}
+.space{
+    background-color: rgb(250, 140, 70);
+    grid-column: span 13;
+}
+.key-item {
+    display: box;
+    align-items: center;
+    width: 77em;
+    height: 20em;
+    border-radius: 12px 8px 8px 12px;
+    background: var(--card-bg);
+    box-shadow: var(--card-box-shadow);
+    transition: all .3s
+}

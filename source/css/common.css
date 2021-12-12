@@ -173,8 +173,8 @@ a:hover {
     }
 }
 
+/* 侧边栏选中时盒子阴影 */
 #recent-posts>.recent-post-item:hover {
-    -webkit-box-shadow: var(--card-hover-box-shadow);
     box-shadow: var(--card-hover-box-shadow)
 }
 
@@ -298,6 +298,10 @@ a:hover {
     background: var(--card-bg);
     box-shadow: var(--card-box-shadow);
     transition: box-shadow .3s
+}
+
+#aside-content .card-widget:hover {
+    box-shadow: var(--card-hover-box-shadow)
 }
 
 /* 侧边栏姓名 */
