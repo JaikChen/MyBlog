@@ -275,6 +275,13 @@ a:hover {
     margin-top: 0
 }
 
+/* 当侧边栏下移时，与文章卡片之间的距离 */
+@media screen and (max-width: 900px) {
+    #aside-content>.card-widget:first-child {
+        margin-top:1rem
+    }
+}
+
 /* 公告和分类字体设置 */
 #aside-content .item-headline {
     padding-bottom: .3rem;
