@@ -1,0 +1,260 @@
+<!-- /*
+ * @Author: jaikchen 
+ * @Date: 2021-10-26 15:59:48 
+ * @Last Modified by:   jaikchen 
+ * @Last Modified time: 2021-10-26 15:59:48 
+ */ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>一悲自留地</title>
+     <link rel="stylesheet" href="../css/base.css">
+     <link rel="stylesheet" href="../css/common.css">
+     <link rel="stylesheet" href="../css/pbl.css">
+     <link rel="stylesheet" href="../css/kcb.css">
+     <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/jaikchen/JaikImage/tubiao.ico">
+ </head>
+ <style>
+    .shell{
+        /* 先设置网格布局 */
+        display: grid;
+        padding: 20px;
+        /* 定义网格布局中行与列之间间隙的尺寸 */
+        grid-gap: 20px;
+        /* 该属性规定网格布局中的列数和宽度 */
+        grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+        /* 设置网格中行的默认尺寸 */
+        grid-auto-rows: 270px;
+        /* 属性控制自动放置项目在网格中的插入方式为填充 */
+        grid-auto-flow: dense;
+    }
+
+    .shell>div{
+        background-color: rgb(51,51,51);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        position: relative;
+    }
+
+    .shell span{
+        color: #fff;
+        font: 100 100px 'Kristen ITC';
+        position: absolute;
+        top: -10px;
+        left: 20px;
+        /* 给文字加个阴影 */
+        text-shadow: -5px 0 rgb(0, 0, 0), 0 -5px rgb(0, 0, 0),5px 0 rgb(0, 0, 0),0 5px rgb(0, 0, 0);
+    }
+    .shell .wide{
+        grid-column: span 2;
+    }
+    .shell .tall{
+        grid-row: span 2;
+    }
+    .shell .big{
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+</style>
+ <body>
+    <!-- 小羊鼠标跟随 -->
+    <article class="img1"></article>
+    <!-- 手动调节的背景颜色 -->
+    <article id="web_bg"></article>
+    <!-- 整体结构使用Flexible Box 模型 -->
+    <article class="page" id="body-wrap">
+        <header class="not-top-img" id="page-header">
+            <nav id="nav">
+                <span id="blog_name">
+                    <a id="site-name" href="">一悲のBlog</a>
+                </span>
+            </nav>
+        </header>
+        <main class="layout" id="content-inner">
+            <div class="recent-posts" id="recent-posts">
+                <div class="shell">
+                    <div class="tall">
+                        <img src="../Image/1 ().jpeg" alt="">
+                        <span>1</span>
+                    </div>
+                    <div>
+                        <img src="1 (2).jpeg" alt="">
+                        <span>2</span>
+                    </div>
+                    <div>
+                        <img src="1 (1).jpeg" alt="">
+                        <span>3</span>
+                    </div>
+                    <div class="wide">
+                        <img src="1 (34).jpeg" alt="">
+                        <span>4</span>
+                    </div>
+                    <div>
+                        <img src="1 (8).jpeg" alt="">
+                        <span>5</span>
+                    </div>
+                    <div class="tall">
+                        <img src="1 (40).jpeg" alt="">
+                        <span>6</span>
+                    </div>
+                    <div class="big">
+                        <img src="1 (7).jpeg" alt="">
+                        <span>7</span>
+                    </div>
+                    <div>
+                        <img src="1 (5).jpeg" alt="">
+                        <span>8</span>
+                    </div>
+                    <div class="wide">
+                        <img src="1 (6).jpeg" alt="">
+                        <span>9</span>
+                    </div>
+                    <div class="big">
+                        <img src="1 (10).jpeg" alt="">
+                        <span>10</span>
+                    </div>
+                    <div class="tall">
+                        <img src="1 (39).jpeg" alt="">
+                        <span>11</span>
+                    </div>
+                    <div>
+                        <img src="1 (12).jpeg" alt="">
+                        <span>12</span>
+                    </div>
+                    <div>
+                        <img src="1 (13).jpeg" alt="">
+                        <span>13</span>
+                    </div>
+                    <div>
+                        <img src="1 (14).jpeg" alt="">
+                        <span>14</span>
+                    </div>
+                    <div>
+                        <img src="1 (15).jpeg" alt="">
+                        <span>15</span>
+                    </div>
+                    <div class="wide">
+                        <img src="1 (35).jpeg" alt="">
+                        <span>16</span>
+                    </div>
+                    <div>
+                        <img src="1 (17).jpeg" alt="">
+                        <span>17</span>
+                    </div>
+                    <div>
+                        <img src="1 (18).jpeg" alt="">
+                        <span>18</span>
+                    </div>
+                    <div class="wide">
+                        <img src="1 (38).jpeg" alt="">
+                        <span>19</span>
+                    </div>
+                    <div>
+                        <img src="1 (20).jpeg" alt="">
+                        <span>20</span>
+                    </div>
+                    <div class="wide">
+                        <img src="1 (21).jpeg" alt="">
+                        <span>21</span>
+                    </div>
+                    <div class="big">
+                        <img src="1 (22).jpeg" alt="">
+                        <span>22</span>
+                    </div>
+                    <div>
+                        <img src="1 (23).jpeg" alt="">
+                        <span>23</span>
+                    </div>
+                    <div>
+                        <img src="1 (24).jpeg" alt="">
+                        <span>24</span>
+                    </div>
+                    <div class="big">
+                        <img src="1 (25).jpeg" alt="">
+                        <span>25</span>
+                    </div>
+                    <div class="tall">
+                        <img src="1 (39).jpeg" alt="">
+                        <span>26</span>
+                    </div>
+                    <div>
+                        <img src="1 (27).jpeg" alt="">
+                        <span>27</span>
+                    </div>
+                    <div>
+                        <img src="1 (28).jpeg" alt="">
+                        <span>28</span>
+                    </div>
+                    <div>
+                        <img src="1 (29).jpeg" alt="">
+                        <span>29</span>
+                    </div>
+                </div>
+            </div>
+            <aside class="aside-content" id="aside-content">
+                <article class="card-widget card-info">
+                    <div class="is-center">
+                        <div class="avatar-img"><img src="https://cdn.jsdelivr.net/gh/jaikchen/JaikImage/head.jpg"></div>
+                        <div class="author-info__name">一悲先生</div>
+                        <div>
+                            夏天涌起橙味的海浪<br>
+                            黄昏在落幕时降临<br>
+                            哪里需要天地熄灭光亮<br>
+                            分明宇宙无限,灯火通明
+                        </div>
+                    </div>
+                    <aside class="card-info-data">
+                        <div class="card-info-data-item is-center"><a href="/source/posts/assignment.html">
+                                <div class="headline">作业</div>
+                                <div class="length-num">4</div>
+                            </a></div>
+                        <div class="card-info-data-item is-center"><a href="source/posts/photograph.html">
+                                <div class="headline">相册</div>
+                                <div class="length-num">4</div>
+                            </a></div>
+                        <div class="card-info-data-item is-center"><a href="/categories/">
+                                <div class="headline">分类</div>
+                                <div class="length-num">5</div>
+                            </a></div>
+                    </aside><a class="button--animated" id="card-info-btn"
+                        href="https://github.com/JaikChen">GitHub</a>
+                </article>
+                <aside class="card-widget card-announcement">
+                    <div class="item-headline"><i class=""></i><span>公告</span></div>
+                    <div class="">欢迎光临，此博客里的内容，皆为简化版，请理性看待。</div>
+                </aside>
+                <aside class="card-widget card-categories">
+                    <div class="item-headline"><span>分类</span></div>
+                    <ul class="card-category-list">
+                        <li class="card-category-list-item"><a><span>学习记录</span><span
+                            >19</span></a></li>
+                        <li class="card-category-list-item"><a><span>干货分享</span><span
+                            >11</span></a></li>
+                        <li class="card-category-list-item"><a><span>技巧杂烩</span><span
+                            >20</span></a></li>
+                        <li class="card-category-list-item"><a><span>无处安放</span><span
+                            >2</span></a></li>
+                        <li class="card-category-list-item"><a><span>生活随笔</span><span
+                            >232</span></a></li>
+                    </ul>
+                </aside>
+            </aside>
+    </article>
+    </main>
+    <footer id="footer">
+        <div id="footer-wrap">
+            <!-- cleever-chen.com为本人博客 -->
+            <div class="">&copy;<a href="https://www.cleever-chen.com" target="_blank">一悲自留地</a></div>
+            <!-- 备案号皖ICP备 2021007180号-3并不存在，而皖ICP备 2021007180号-1与皖ICP备 2021007180号-2是本人两个域名的备案号 -->
+            <div class=""><a href="https://beian.miit.gov.cn/" target="_blank">皖ICP备 2021007180号-3 </a></div>
+        </div>
+    </footer>
+    </div>
+</body>
+<script src="../js/sleep.js"></script>
+</html>
