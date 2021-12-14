@@ -494,3 +494,8 @@ a:hover {
     box-shadow: var(--card-box-shadow);
     transition: all .3s
 }
+.beijingqiehuan {
+    background-color: #000;
+    color: #fff;
+    transition: all .4s linear;
+}
