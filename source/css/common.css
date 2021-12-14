@@ -483,3 +483,14 @@ a:hover {
     background-image: url('../Image/goat.gif');
     background-size: cover;
 }
+
+.all-item {
+    display: box;
+    align-items: center;
+    width: 77em;
+    height: 20em;
+    border-radius: 12px 8px 8px 12px;
+    background: var(--card-bg);
+    box-shadow: var(--card-box-shadow);
+    transition: all .3s
+}
