@@ -42,6 +42,7 @@
         imgl += imgx / 50
             imgt+=imgy/50
         }
+    
     img1.style.left = imgl+"px"
     img1.style.top = imgt+"px"
     },10)
