@@ -1,75 +1,205 @@
-/* 弃用方案，本想把所有的浏览器自带样式去掉，但由于技术有限以及不够熟练，故只能拆东墙补西墙，在博客主体样式里集成即可 */
-/* ———————————————————————————————————————————————————————————————————————————————————————————————————————————————— */
-/* ———————————————————————————————————————————————————————————————————————————————————————————————————————————————— */
-/* ———————————————————————————————————————————————————————————————————————————————————————————————————————————————— */
-/* 把我们所有标签的内外边距清零 */
-* {
-    margin: 0;
-    padding: 0;
-    /* css3盒子模型 */
-    box-sizing: border-box;
-}
-/* em 和 i 斜体的文字不倾斜 */
-em,
-i {
-    font-style: normal
-}
-/* 去掉li 的小圆点 */
-li {
-    list-style: none
+
+main {
+    display: block
 }
 
-img {
-    /* border 0 照顾低版本浏览器 如果 图片外面包含了链接会有边框的问题 */
-    border: 0;
-    /* 取消图片底侧有空白缝隙的问题 */
-    vertical-align: middle
+*{
+       padding: 0px;
+       margin: 0px;
+       box-sizing: border-box;
+       list-style: none;
+       box-sizing: border-box
+   }
+
+/* 为了颜色统一避免颜色不够纯净故在此规定一些设计中需用到的颜色 */
+:root {
+    /* 整体字体大小 */
+    --global-font-size: 14px;
+    /* 侧边栏里三个标签字体颜色 */
+    --font-color: #4c4948;
+    --tab-button-hover-bg: #dcdcdc;
+    /*侧边栏颜色*/
+    --card-bg: #fff;        
+    /*github文字动画颜色*/             
+    --btn-hover-color: #ff7242;          
+    --btn-color: #fff;
+    --btn-bg: #9c9;
+    /*指针悬浮分类内容时的颜色*/
+    --text-bg-hover: rgba(153,204,153,0.7);
+    /* 用来规定页脚颜色 */
+    --light-grey: #eee;
+    /* 侧边栏里数字颜色 */
+    --text-highlight-color: #1f2d3d;;
+    /* 选中文章卡牌时，文章卡片阴影颜色 */
+    --card-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.06);
+    --card-hover-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.15)
 }
 
-button {
-    /* 当我们鼠标经过button 按钮的时候，鼠标变成小手 */
-    cursor: pointer
-}
-
-a {
-    color: #666;
-    text-decoration: none
-}
-
-a:hover {
-    color: #c81623
-}
-
-button,
-input {
-    /* "\5B8B\4F53" 就是宋体的意思 这样浏览器兼容性比较好 */
-    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
-    /* 默认有灰色边框我们需要手动去掉 */
-    border: 0; 
-    outline: none;
+html {
+    height: 100%;
+    font-size: 20px;
+    line-height: 1.15
 }
 
 body {
-    /* CSS3 抗锯齿形 让文字显示的更加清晰 */
-    -webkit-font-smoothing: antialiased;
-    background-color: #fff;
-    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
-    color: #666
+    margin: 0;
+    position: relative;
+    min-height: 100%;
+    background: var(--global-bg);
+    color: var(--font-color);
+    font-size: var(--global-font-size); 
+    line-height: 2
 }
 
-.hide,
-.none {
-    display: none
-}
-/* 清除浮动 */
-.clearfix:after {
-    visibility: hidden;
-    clear: both;
-    display: block;
-    content: ".";
-    height: 0
+/* 主博客颜色调节 */
+/* 本想用background-image: linear-gradient(to left, #fd79a8, #a29bfe); */
+/* 无奈颜色实在不好调，故此参考了一些大佬的写法 */
+#web_bg {
+    position: fixed;
+    z-index: -999;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(0deg,rgba(247,149,51,.1) 0,rgba(243,112,85,.1) 15%,rgba(239,78,123,.1) 30%,rgba(161,102,171,.1) 44%,rgba(80,115,184,.1) 58%,rgba(16,152,173,.1) 72%,rgba(7,179,155,.1) 86%,rgba(109,186,130,.1) 100%);
+    background: -moz-linear-gradient(0deg,rgba(247,149,51,.1) 0,rgba(243,112,85,.1) 15%,rgba(239,78,123,.1) 30%,rgba(161,102,171,.1) 44%,rgba(80,115,184,.1) 58%,rgba(16,152,173,.1) 72%,rgba(7,179,155,.1) 86%,rgba(109,186,130,.1) 100%);
+    background: -o-linear-gradient(0deg,rgba(247,149,51,.1) 0,rgba(243,112,85,.1) 15%,rgba(239,78,123,.1) 30%,rgba(161,102,171,.1) 44%,rgba(80,115,184,.1) 58%,rgba(16,152,173,.1) 72%,rgba(7,179,155,.1) 86%,rgba(109,186,130,.1) 100%);
+     background: linear-gradient(90deg,rgba(247,149,51,.1) 0,rgba(243,112,85,.1) 15%,rgba(239,78,123,.1) 30%,rgba(161,102,171,.1) 44%,rgba(80,115,184,.1) 58%,rgba(16,152,173,.1) 72%,rgba(7,179,155,.1) 86%,rgba(109,186,130,.1) 100%)
 }
 
-.clearfix {
-    *zoom: 1
+a {
+    color: #99a9bf;
+    text-decoration: none;
+    word-wrap: break-word;
+    transition: all .2s;
+    background-color: transparent;
+    overflow-wrap: break-word
+}
+
+a:hover {
+    color: #9c9
+}
+
+/* 侧边栏内容居中 */
+
+#body-wrap {
+    display: box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh
+}
+
+.layout {
+    display: box;
+    display: flex;
+    box-flex: 1;
+    flex: 1 auto;
+    margin: 0 auto;
+    padding: 2rem 15px;
+    max-width: 1200px;
+    width: 100%
+}
+
+@media screen and (max-width: 900px) {
+    .layout {
+        flex-direction: column
+    }
+}
+
+
+.layout>div:first-child {
+    width: 100%;
+    transition: all .3s
+}
+
+/* 根据浏览器窗口大小给定内容盒子大小 */
+@media screen and (max-width: 900px) {
+    .layout>div:first-child {
+        width:100%!important
+    }
+}
+
+/* footer设计 */
+#footer {
+    position: relative;
+    background: #9c9;
+    background-attachment: local;
+    background-position: bottom;
+    background-size: cover
+}
+
+/* footer内容布局 */
+#footer-wrap {
+    position: relative;
+    padding: 2rem 1rem;
+    color: var(--light-grey);
+    text-align: center
+}
+
+#footer-wrap a {
+    color: var(--light-grey)
+}
+
+/* 用鼠标停留时出现下划线提醒是连接可以点击 */
+#footer-wrap a:hover {
+    text-decoration: underline
+}
+
+/* 导航栏范围 */
+#page-header.not-top-img {
+    margin-bottom: .5rem;
+    height: 60px;
+    background: 0
+}
+
+/* 导航栏形状 */
+#page-header.not-top-img #nav {
+    background: rgba(255,255,255,.8);
+    box-shadow: 0 5px 6px -5px rgba(133,133,133,.6)
+}
+
+/* 导航栏内容颜色 */
+#page-header.not-top-img #nav a {
+    color: var(--fot-color);
+    text-shadow: none
+}
+
+#nav {
+    position: absolute;
+    top: 0;
+    z-index: 90;
+    display: box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 36px;
+    width: 100%;
+    height: 60px;
+    font-size: 1.3em;
+    opacity: 1;
+    transition: all .5s
+}
+
+#nav a {
+    color: var(--light-grey)
+}
+
+#nav a:hover {
+    color: var(--white)
+}
+
+/* 站点名字加粗 */
+#nav #site-name {
+    font-weight: 700;
+}
+
+/* 小羊鼠标跟随 */
+
+.all-item {
+    display: box;
+    margin: 20px;
+    align-items: center;
+    height: 20em;
+    border-radius: 12px 8px 8px 12px;
+    background: var(--card-bg);
+    box-shadow: var(--card-box-shadow);
+    transition: all .3s
 }

@@ -486,6 +486,7 @@ a:hover {
 
 .all-item {
     display: box;
+    margin: 20px;
     align-items: center;
     width: 77em;
     height: 20em;
