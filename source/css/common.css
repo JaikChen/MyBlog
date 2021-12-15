@@ -58,7 +58,7 @@ body {
 }
 
 /* 主博客颜色调节 */
-/* 本想用background-image: linear-gradient(to left, #fd79a8, #a29bfe); */
+本想用background-image: linear-gradient(to left, #fd79a8, #a29bfe);
 /* 无奈颜色实在不好调，故此参考了一些大佬的写法 */
 #web_bg {
     position: fixed;
