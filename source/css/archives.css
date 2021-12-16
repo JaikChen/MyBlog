@@ -3,14 +3,14 @@
     justify-content: center;
 }
 .wrap{
-    width: 1000px;
+    width: 800px;
     position: relative;
-    top: 100px;
+    top: 47px;
 }
 .wrap::after{
     content: '';
     position: absolute;
-    top: -100px;
+    top: -80px;
     left: 50%;
     width: 5px;
     z-index: -999;
