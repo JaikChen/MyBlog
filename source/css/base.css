@@ -203,3 +203,100 @@ a:hover {
     box-shadow: var(--card-box-shadow);
     transition: all .3s
 }
+
+.beijingqiehuan {
+    background-color: #000;
+    color: #fff;
+    transition: all .4s linear;
+}
+.navpost {
+
+    display: flex;
+    float: right;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.navpost.active {
+    width: 330px;
+}
+
+.navpost.active ul li {
+    opacity: 1;
+    transform: rotateY(360deg);
+}
+
+.navpost.active ul {
+    width: 100%;
+}
+
+.navpost ul {
+    display: flex;
+    list-style-type: none;
+    justify-items: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 0;
+    transition: width 0.6s linear;
+}
+
+.navpost ul li {
+    transform: rotateY(0deg);
+    opacity: 0;
+    transition: transform 0.6s linear, opacity 0.6s linear;
+}
+
+.navpost ul a {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    /* 强制中文不换行 */
+    white-space: nowrap;
+}
+
+button {
+    background-color: #fff;
+    border: 0;
+    margin-right: 40px;
+    /* margin-right: 40px; */
+    cursor: pointer;
+    position: relative;
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+}
+
+button:focus {
+    outline: 0;
+}
+
+button .xian1,
+button .xian2 {
+    width: 20px;
+    height: 2px;
+    background-color: #5290f9;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    transition: transform .6s linear;
+}
+
+button .xian2 {
+    top: auto;
+    bottom: 10px;
+}
+
+button .xian1 {
+    bottom: auto;
+    top: 10px;
+}
+
+.navpost.active button .xian1 {
+    transform: rotate(-765deg) translateY(5.5px);
+}
+
+.navpost.active button .xian2 {
+    transform: rotate(765deg) translateY(-5.5px);
+}
