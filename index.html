@@ -17,7 +17,7 @@
     <!-- 手动调节的背景颜色 -->
     <article id="web_bg"></article>
     <!-- 整体结构使用Flexible Box 模型 -->
-    <articleid="body-wrap">
+    <article id="body-wrap">
         <header class="not-top-img" id="page-header">
             <nav id="nav">
                 <a id="site-name" href="index.html">一悲のBlog</a>
@@ -32,18 +32,8 @@
                         <div class="xian1"></div>
                         <div class="xian2"></div>
                     </button>
-                </div>
-                <script>
-                    const btn = document.querySelector('button');
-                    const navpost = document.querySelector('.navpost');
-                    btn.addEventListener('click', () => {
-                        navpost.classList.toggle('active')
-                    })
-                </script>
-
-
+                </div>          
             </nav>
-
         </header>
         <main class="layout" id="content-inner">
             <div class="recent-posts" id="recent-posts">
@@ -256,5 +246,6 @@
     </div>
 </body>
 <script type="text/javascript" src="source/js/sleep.js"></script>
+<script type="text/javascript" src="source/js/nav.js"></script>
 
 </html>
