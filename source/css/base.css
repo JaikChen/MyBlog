@@ -77,7 +77,6 @@ a:hover {
     color: #9c9
 }
 
-/* 侧边栏内容居中 */
 
 #body-wrap {
     display: box;
@@ -100,19 +99,6 @@ a:hover {
 @media screen and (max-width: 900px) {
     .layout {
         flex-direction: column
-    }
-}
-
-
-.layout>div:first-child {
-    width: 100%;
-    transition: all .3s
-}
-
-/* 根据浏览器窗口大小给定内容盒子大小 */
-@media screen and (max-width: 900px) {
-    .layout>div:first-child {
-        width:100%!important
     }
 }
 
@@ -164,7 +150,7 @@ background: rgba(255,255,255,.8);
     top: 0;
     z-index: 90;
     display: box;
-   line-height: 60px;
+    line-height: 60px;
     width: 100%;
     height: 60px;
     font-size: 1.3em;

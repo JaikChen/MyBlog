@@ -1,12 +1,12 @@
 .sp{
     width: 500px;
-     height: 700px;
+     height: 826px;
      /* background-color: rgb(51,51,51); */
      display: flex;
      justify-content: space-between;
      margin: auto;
      position: relative;
-     top: 40px;
+     top: 1px;
 }
 .sp1 {
     width: 100%;

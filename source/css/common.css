@@ -433,16 +433,11 @@ background: rgba(255,255,255,.8);
 
 }
 
-/* 导航栏形状 */
-/* #page-header.not-top-img #nav {
-    
-} */
 
 /* 导航栏内容颜色 */
 #page-header.not-top-img #nav a {
     color: var(--fot-color);
     text-shadow: none;
-    /* padding-left: 40px; */
 }
 
 #nav {
