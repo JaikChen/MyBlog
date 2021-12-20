@@ -355,7 +355,6 @@ a:hover {
     padding: .15rem .5rem;
     width: 100%;
     color: var(--font-color);
-
     transition: all .4s
 }
 
@@ -368,12 +367,6 @@ a:hover {
     display: inline-block;
     vertical-align: bottom
 }
-
-/* 分类中，具体内容 */
-#aside-content .card-categories ul.card-category-list>.card-category-list-item a span:first-child {
-    width: 80%
-}
-
 
 
 /* 头像框设计 */
@@ -477,22 +470,6 @@ background: rgba(255,255,255,.8);
     background-size: cover;
 }
 
-.all-item {
-    display: box;
-    margin: 20px;
-    align-items: center;
-    width: 77em;
-    height: 20em;
-    border-radius: 12px 8px 8px 12px;
-    background: var(--card-bg);
-    box-shadow: var(--card-box-shadow);
-    transition: all .3s
-}
-.beijingqiehuan {
-    background-color: #000;
-    color: #fff;
-    transition: all .4s linear;
-}
 .navpost {
 
     display: flex;
@@ -584,3 +561,4 @@ button .xian1 {
 .navpost.active button .xian2 {
     transform: rotate(765deg) translateY(-5.5px);
 }
+

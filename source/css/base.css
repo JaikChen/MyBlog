@@ -1,185 +1,187 @@
-main {
-    display: block
-}
 
 *{
-       padding: 0px;
-       margin: 0px;
-       box-sizing: border-box;
-       list-style: none;
-       box-sizing: border-box
-   }
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    box-sizing: border-box
+}
 
 /* 为了颜色统一避免颜色不够纯净故在此规定一些设计中需用到的颜色 */
 :root {
-    /* 整体字体大小 */
-    --global-font-size: 14px;
-    /* 侧边栏里三个标签字体颜色 */
-    --font-color: #4c4948;
-    --tab-button-hover-bg: #dcdcdc;
-    /*侧边栏颜色*/
-    --card-bg: #fff;        
-    /*github文字动画颜色*/             
-    --btn-hover-color: #ff7242;          
-    --btn-color: #fff;
-    --btn-bg: #9c9;
-    /*指针悬浮分类内容时的颜色*/
-    --text-bg-hover: rgba(153,204,153,0.7);
-    /* 用来规定页脚颜色 */
-    --light-grey: #eee;
-    /* 侧边栏里数字颜色 */
-    --text-highlight-color: #1f2d3d;;
-    /* 选中文章卡牌时  ，文章卡片阴影颜色 */
-    --card-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.06);
-    --card-hover-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.15)
+ /* 整体字体大小 */
+ --global-font-size: 14px;
+ /* 侧边栏里三个标签字体颜色 */
+ --font-color: #4c4948;
+ --tab-button-hover-bg: #dcdcdc;
+ /*侧边栏颜色*/
+ --card-bg: #fff;        
+ /*github文字动画颜色*/             
+ --btn-hover-color: #ff7242;          
+ --btn-color: #fff;
+ --btn-bg: #9c9;
+ /*指针悬浮分类内容时的颜色*/
+ --text-bg-hover: rgba(153,204,153,0.7);
+ /* 用来规定页脚颜色 */
+ --light-grey: #eee;
+ /* 侧边栏里数字颜色 */
+ --text-highlight-color: #1f2d3d;;
+ /* 选中文章卡牌时  ，文章卡片阴影颜色 */
+ --card-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.06);
+ --card-hover-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.15)
 }
 
 html {
-    height: 100%;
-    font-size: 20px;
-    line-height: 1.15
+ height: 100%;
+ font-size: 20px;
+ line-height: 1.15
 }
 
 body {
-    margin: 0;
-    position: relative;
-    min-height: 100%;
-    background: var(--global-bg);
-    color: var(--font-color);
-    font-size: var(--global-font-size); 
-    line-height: 2
+ margin: 0;
+ position: relative;
+ min-height: 100%;
+ background: var(--global-bg);
+ color: var(--font-color);
+ font-size: var(--global-font-size); 
+ line-height: 2
 }
 
 /* 主博客颜色调节 */
 /* 本想用background-image: linear-gradient(to left, #fd79a8, #a29bfe); */
 /* 无奈颜色实在不好调，故此参考了一些大佬的写法 */
 #web_bg {
-    position: fixed;
-    z-index: -999;
-    width: 100%;
-    height: 100%;
-    background: -webkit-linear-gradient(0deg,rgba(247,149,51,.1) 0,rgba(243,112,85,.1) 15%,rgba(239,78,123,.1) 30%,rgba(161,102,171,.1) 44%,rgba(80,115,184,.1) 58%,rgba(16,152,173,.1) 72%,rgba(7,179,155,.1) 86%,rgba(109,186,130,.1) 100%);
-    background: -moz-linear-gradient(0deg,rgba(247,149,51,.1) 0,rgba(243,112,85,.1) 15%,rgba(239,78,123,.1) 30%,rgba(161,102,171,.1) 44%,rgba(80,115,184,.1) 58%,rgba(16,152,173,.1) 72%,rgba(7,179,155,.1) 86%,rgba(109,186,130,.1) 100%);
-    background: -o-linear-gradient(0deg,rgba(247,149,51,.1) 0,rgba(243,112,85,.1) 15%,rgba(239,78,123,.1) 30%,rgba(161,102,171,.1) 44%,rgba(80,115,184,.1) 58%,rgba(16,152,173,.1) 72%,rgba(7,179,155,.1) 86%,rgba(109,186,130,.1) 100%);
-    background: linear-gradient(90deg,rgba(247,149,51,.1) 0,rgba(243,112,85,.1) 15%,rgba(239,78,123,.1) 30%,rgba(161,102,171,.1) 44%,rgba(80,115,184,.1) 58%,rgba(16,152,173,.1) 72%,rgba(7,179,155,.1) 86%,rgba(109,186,130,.1) 100%)
+ position: fixed;
+ z-index: -999;
+ width: 100%;
+ height: 100%;
+ background: -webkit-linear-gradient(0deg,rgba(247,149,51,.1) 0,rgba(243,112,85,.1) 15%,rgba(239,78,123,.1) 30%,rgba(161,102,171,.1) 44%,rgba(80,115,184,.1) 58%,rgba(16,152,173,.1) 72%,rgba(7,179,155,.1) 86%,rgba(109,186,130,.1) 100%);
+ background: -moz-linear-gradient(0deg,rgba(247,149,51,.1) 0,rgba(243,112,85,.1) 15%,rgba(239,78,123,.1) 30%,rgba(161,102,171,.1) 44%,rgba(80,115,184,.1) 58%,rgba(16,152,173,.1) 72%,rgba(7,179,155,.1) 86%,rgba(109,186,130,.1) 100%);
+ background: -o-linear-gradient(0deg,rgba(247,149,51,.1) 0,rgba(243,112,85,.1) 15%,rgba(239,78,123,.1) 30%,rgba(161,102,171,.1) 44%,rgba(80,115,184,.1) 58%,rgba(16,152,173,.1) 72%,rgba(7,179,155,.1) 86%,rgba(109,186,130,.1) 100%);
+ background: linear-gradient(90deg,rgba(247,149,51,.1) 0,rgba(243,112,85,.1) 15%,rgba(239,78,123,.1) 30%,rgba(161,102,171,.1) 44%,rgba(80,115,184,.1) 58%,rgba(16,152,173,.1) 72%,rgba(7,179,155,.1) 86%,rgba(109,186,130,.1) 100%)
 }
 
 a {
-    color: #99a9bf;
-    text-decoration: none;
-    word-wrap: break-word;
-    transition: all .2s;
-    background-color: transparent;
-    overflow-wrap: break-word
+ color: #99a9bf;
+ text-decoration: none;
+ word-wrap: break-word;
+ transition: all .2s;
+ background-color: transparent;
+ overflow-wrap: break-word
 }
 
 a:hover {
-    color: #9c9
+ color: #9c9
 }
 
+/* 侧边栏内容居中 */
 
 #body-wrap {
-    display: box;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh
-}
-
-.layout {
-    display: box;
-    display: flex;
-    box-flex: 1;
-    flex: 1 auto;
-    margin: 0 auto;
-    padding: 2rem 15px;
-    max-width: 1200px;
-    width: 100%
-}
-
-@media screen and (max-width: 900px) {
-    .layout {
-        flex-direction: column
-    }
+ display: box;
+ display: flex;
+ flex-direction: column;
+ min-height: 100vh
 }
 
 /* footer设计 */
 #footer {
-    position: relative;
-    background: #9c9;
-    background-attachment: local;
-    background-position: bottom;
-    background-size: cover
+ position: relative;
+ background: #9c9;
+ background-attachment: local;
+ background-position: bottom;
+ background-size: cover
 }
 
 /* footer内容布局 */
 #footer-wrap {
-    position: relative;
-    padding: 2rem 1rem;
-    color: var(--light-grey);
-    text-align: center
+ position: relative;
+ padding: 2rem 1rem;
+ color: var(--light-grey);
+ text-align: center
 }
 
 #footer-wrap a {
-    color: var(--light-grey)
+ color: var(--light-grey)
 }
 
 /* 用鼠标停留时出现下划线提醒是连接可以点击 */
 #footer-wrap a:hover {
-    text-decoration: underline
+ text-decoration: underline
 }
 
 /* 导航栏范围 */
 #page-header.not-top-img {
-    margin-bottom: .5rem;
-    height: 60px;
-    width: 100%;
+ margin-bottom: .5rem;
+ height: 60px;
+ width: 100%;
 background: rgba(255,255,255,.8);
-    box-shadow: 0 5px 6px -5px rgba(133,133,133,.6);
+ box-shadow: 0 5px 6px -5px rgba(133,133,133,.6);
 
 }
+
 
 /* 导航栏内容颜色 */
 #page-header.not-top-img #nav a {
-    color: var(--fot-color);
-    text-shadow: none;
-    /* padding-left: 40px; */
+ color: var(--fot-color);
+ text-shadow: none;
 }
 
 #nav {
-    position: absolute;
-    top: 0;
-    z-index: 90;
-    display: box;
-    line-height: 60px;
-    width: 100%;
-    height: 60px;
-    font-size: 1.3em;
-    opacity: 1;
+ position: absolute;
+ top: 0;
+ z-index: 90;
+ display: box;
+line-height: 60px;
+ width: 100%;
+ height: 60px;
+ font-size: 1.3em;
+ opacity: 1;
 }
 
 #nav a {
-    float: left;
-    color: var(--light-grey)
-   
+ float: left;
+ color: var(--light-grey)
+
 }
 
 #nav a:hover {
-    color: var(--white)
+ color: var(--white)
 }
 
 /* 站点名字加粗 */
 #nav #site-name {
-    font-weight: 700;
-    padding-left: 40px;
+ font-weight: 700;
+ padding-left: 40px;
 }
 
 /* 小羊鼠标跟随 */
+.img1{
+ width: 50px;
+ height: 50px;
+ position: absolute;
+ background-image: url('../Image/goat.gif');
+ background-size: cover;
+}
+
 .navpost {
 
     display: flex;
     float: right;
     border-radius: 3px;
     overflow: hidden;
+}
+
+.navpost.active {
+    width: 330px;
+}
+
+.navpost.active ul li {
+    opacity: 1;
+    transform: rotateY(360deg);
+}
+
+.navpost.active ul {
+    width: 100%;
 }
 
 .navpost ul {
@@ -245,13 +247,10 @@ button .xian1 {
     top: 10px;
 }
 
-.all-item {
-    display: box;
-    margin: 20px;
-    align-items: center;
-    height: 20em;
-    border-radius: 12px 8px 8px 12px;
-    background: var(--card-bg);
-    box-shadow: var(--card-box-shadow);
-    transition: all .3s
+.navpost.active button .xian1 {
+    transform: rotate(-765deg) translateY(5.5px);
+}
+
+.navpost.active button .xian2 {
+    transform: rotate(765deg) translateY(-5.5px);
 }
