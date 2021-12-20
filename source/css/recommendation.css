@@ -60,7 +60,7 @@
     width: 70px;
     background-color: rgb(90,220,150);
 }
-.a:hover .c div{
+.a:hover .c section{
     /* 设置延迟动画 */
     transition: .5s calc(var(--i)*.1s);
     /* 移动的轨迹 */
