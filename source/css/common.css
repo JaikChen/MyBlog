@@ -139,14 +139,14 @@ a:hover {
 }
 
 
-.layout>div:first-child {
+.layout>section:first-child {
     width: 75%;
     transition: all .3s
 }
 
 /* 根据浏览器窗口大小给定内容盒子大小 */
 @media screen and (max-width: 900px) {
-    .layout>div:first-child {
+    .layout>section:first-child {
         width:100%!important
     }
 }

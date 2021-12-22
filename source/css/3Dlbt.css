@@ -13,7 +13,7 @@
     transform-style: preserve-3d;
     animation: a 8s infinite cubic-bezier(.7,0,.17,1);
 }
-.b div{
+.b section{
     position: absolute;
     background-size: cover;
     opacity: .9;
