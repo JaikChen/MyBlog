@@ -167,6 +167,11 @@ a:hover {
     transition: all .3s
 }
 
+#recent-posts>.allpost-item {
+    height: 63em;
+    align-items: stretch;
+}
+
 @media screen and (max-width: 768px) {
     #recent-posts>.recent-post-item {
         border-radius:12px 12px 8px 8px
