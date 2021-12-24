@@ -168,17 +168,21 @@ a:hover {
 }
 
 #recent-posts>.allpost-item {
-    height: 63em;
+    height: 58em;
     align-items: stretch;
+    border-radius: 12px 8px 8px 12px;
+    background: var(--card-bg);
+    box-shadow: var(--card-box-shadow);
+    transition: all .3s
 }
 
 @media screen and (max-width: 768px) {
-    #recent-posts>.recent-post-item {
+    #recent-posts>.recent-post-item,{
         border-radius:12px 12px 8px 8px
     }
 }
 
-/* 侧边栏选中时盒子阴影 */
+/* 选中时盒子阴影 */
 #recent-posts>.recent-post-item:hover {
     box-shadow: var(--card-hover-box-shadow)
 }
