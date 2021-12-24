@@ -177,7 +177,7 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
-    #recent-posts>.recent-post-item,{
+    #recent-posts>.recent-post-item {
         border-radius:12px 12px 8px 8px
     }
 }
